@@ -1,9 +1,9 @@
 /*
-ÒªÇó£º×ÓÊı×éºÍ = ×ÓÊı×é³¤¶È
-Ë¼Â·£º
-±©Á¦£º b[i]-b[j-1]==i-j+1
+è¦æ±‚ï¼šå­æ•°ç»„å’Œ = å­æ•°ç»„é•¿åº¦
+æ€è·¯ï¼š
+æš´åŠ›ï¼š b[i]-b[j-1]==i-j+1
 -->b[i]-i == b[j-1]-(j-1)-->f[i]=b[i]-i
-unordered_mapÎŞĞò´æ´¢£¬¼ÆÊı£» 
+unordered_mapæ— åºå­˜å‚¨ï¼Œè®¡æ•°ï¼› 
 */
 
 #include<bits/stdc++.h>
@@ -32,7 +32,7 @@ void go(){
 //		}
 //	}
 	unordered_map<int,int>mp;
-	mp.reserve(n * 2);         // ·ÀÖ¹ rehash ÌáÉıËÙ¶È
+	mp.reserve(n * 2);         // é˜²æ­¢ rehash æå‡é€Ÿåº¦
     mp.max_load_factor(0.7);
 	mp[0]=1;
 	for(int i=1;i<=n;i++){
